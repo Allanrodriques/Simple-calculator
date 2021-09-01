@@ -1,0 +1,153 @@
+body {
+	font-family: 'Open Sans',sans-serif;
+	background-color: black;
+}
+
+div.container{
+	width: 1000px;
+	height: 700px;
+	background-image:linear-gradient(rgba(0,0,0,0.3),
+		            rgba(0,0,0,0.3)), url(bgimg.jpg);
+	margin: 0;
+	align-content: center;
+    margin: 15px auto;
+    width: 1500px;
+    }
+
+div.calculator {
+	width: 320px;
+	height: 550px;
+	/*background-color:#eaedef;*/
+	/*background: linear-gradient();*/
+	background-color: #ffffff;
+   background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+	margin: 0px auto;
+	top: 20px;
+	position: relative;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+	           0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.result {
+	height: 120px;
+}
+
+input {
+	position: relative;
+	top: 10px;
+	width: 100%;
+	height: 60px;
+	text-decoration: none;
+	padding: 15px;
+	text-align: right;
+	font-weight: bold;
+	background: transparent;
+	border: none;
+	font-size: 25px;
+	border-bottom: 1px solid rgba(1, 1, 255, 0.5);
+	/*border-top: 1px solid rgba(1, 1, 255, 0.5);*/
+	
+}
+
+
+div.output {
+	text-align: right;
+	height: 60px;
+	margin: 10px 20px;
+	font-size: 30px;
+}
+
+div.keyboard{
+	height: 400px;
+}
+
+.operator,.number,.empty {
+	width: 50px;
+	height: 50px;
+	margin: 15px;
+	float: left	;
+	border-radius: 50%;
+	border-width: 0;
+	font-size: 15px;
+	font-weight: bold;
+	user-select: none;
+}
+
+.number,.empty {
+	background-color: #D6DBDF ;
+}
+
+.number,.operator {
+	cursor: pointer;
+}
+
+.operator:active, .number:active{
+	font-size: 13px;
+}
+
+button:nth-child(1){
+	font-size: 20px;
+	background-color:#7FFF00;
+}
+button:nth-child(2){
+	font-size: 20px;
+	background-color:#B22222;
+}
+button:nth-child(3){
+	font-size: 20p x;
+	background-color:#FFFF00;
+}
+button:nth-child(4){
+	font-size: 20px;
+	background-color: #20b2aa;
+}
+button:nth-child(8){
+	font-size: 20px;
+	background-color: #ffa500;
+}
+button:nth-child(12){
+	font-size: 20px;
+	background-color: #f08080;
+}
+button:nth-child(16){
+	font-size: 20px;
+	background-color: #7d93e8;
+}
+button:nth-child(20){
+	font-size: 20px;
+	background-color: #9477af;
+}
+div a {
+	position: relative;
+	top: 75px;
+	left: 41%;
+	background: transparent;
+   color: #fff;
+   padding: 14px 25px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   border: 2px solid rgba(255, 255, 255, 0.2);
+ 	font-size: 18px;
+ 	margin: 0px auto;
+}
+a:hover{
+	transition: 0s;
+	background :rgba(255, 255, 255, 0.05);
+}
+/* ##### Mobile ###*/
+@media screen and (max-width: 680px){
+   div.container {
+   	width: 100%;
+   	padding: 0;
+   }
+   div a {
+   	position: relative;
+   	left: 25%;
+   }
+   }
+
+
+
+

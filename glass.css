@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Quicksand',sans-sherif;
+	box-sizing: border-box;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vH;
+	background: #091921;
+}
+body::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(#e91e63,#ffc107);
+	clip-path: circle(18% at 30% 20%);
+}
+body::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(#ffffff,#da00ff);
+	clip-path: circle(18% at 70% 90%);
+}
+.container {
+	position: relative;
+	background: rgba(255, 255, 255, 0.05);
+	border-radius: 6px;
+	overflow: hidden;
+	z-index: 10;
+	backdrop-filter: blur(15px);
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
+	border-left: 1px solid rgba(255, 255, 255, 0.2);
+	box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+}
+div.container,div.calculator{
+	position: relative;
+	display: flex;
+	align-content: center;
+
+}
+div.calculator{
+	width: 330px;
+	height: 549px;
+	margin: 0px auto;
+
+}
+
+button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    width: 82px;
+	 height: 82px;
+}
+input {
+	position:absolute;
+	/*top: 5px;*/
+	width: 100%;
+	height: 130px;
+	text-align: right;
+	border: none;
+	outline: none;
+	padding: 30px;
+	font-size: 25px;
+	background: transparent;
+	color: #fff;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+	border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+div.output {
+	position: relative;
+	top: 0px;
+}
+
+.operator,.number,.empty  {
+	
+	float: left	;
+	/*margin: 6px;*/
+	font-size: 20px;
+	font-weight: 700;
+	color: #fff;
+	user-select: none;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+	border-right: 1px solid rgba(255, 255, 255, 0.05);
+
+	
+}
+.keyboard {
+	position: relative;
+	top: 130px;
+}
+.container .calculator button:hover {
+	transition: 0s;
+	background :rgba(255, 255, 255, 0.05);
+}
+.container .calculator button:active {
+	background: #14ff47;
+	color: #192f00;
+	font-weight: 400;
+	font-size: 24px;
+	}
+/* ##### Mobile ###*/
+@media screen and (max-width: 680px){
+   div.container {
+   	width: 66%;
+   	padding: 0;
+   }
